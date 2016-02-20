@@ -1,5 +1,6 @@
 import bottle
 import os
+import random
 
 
 @bottle.route('/static/<path:path>')
@@ -13,10 +14,14 @@ def index():
         bottle.request.urlparts.scheme,
         bottle.request.urlparts.netloc
     )
+    
+    bieberqoutes = ['I make mistakes growing up. I\'m not perfect; I\'m not a robot. -Justin Bieber', 'I\'m crazy, I\'m nuts. Just the way my brain works. I\'m not normal. I think differently. -Justin Bieber', 'Friends are the best to turn to when you\'re having a rough day. -Justin Bieber', 'I leave the hip thrusts to Michael Jackson. -Justin Bieber', It's cool when fans spend so much time making things for me. It means a lot. -Justin Bieber']
+
 
     return {
         'color': '#00ff00',
-        'head': head_url
+        'head': head_url,
+        'taunt': random.choice(bieberqoutes)
     }
 
 
@@ -24,10 +29,10 @@ def index():
 def start():
     data = bottle.request.json
 
-    # TODO: Do things with data
+    bieberqoutes = ['I make mistakes growing up. I\'m not perfect; I\'m not a robot. -Justin Bieber', 'I\'m crazy, I\'m nuts. Just the way my brain works. I\'m not normal. I think differently. -Justin Bieber', 'Friends are the best to turn to when you\'re having a rough day. -Justin Bieber', 'I leave the hip thrusts to Michael Jackson. -Justin Bieber', It's cool when fans spend so much time making things for me. It means a lot. -Justin Bieber']
 
     return {
-        'taunt': 'battlesnake-python!'
+        'taunt': random.choice(bieberqoutes)
     }
 
 
