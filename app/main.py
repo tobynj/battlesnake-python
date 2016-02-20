@@ -15,7 +15,7 @@ def index():
         bottle.request.urlparts.netloc
     )
     
-    bieberqoutes = ['I make mistakes growing up. I\'m not perfect; I\'m not a robot. -Justin Bieber', 'I\'m crazy, I\'m nuts. Just the way my brain works. I\'m not normal. I think differently. -Justin Bieber', 'Friends are the best to turn to when you\'re having a rough day. -Justin Bieber', 'I leave the hip thrusts to Michael Jackson. -Justin Bieber', It's cool when fans spend so much time making things for me. It means a lot. -Justin Bieber']
+    bieberqoutes = ['I make mistakes growing up. I\'m not perfect; I\'m not a robot. -Justin Bieber', 'I\'m crazy, I\'m nuts. Just the way my brain works. I\'m not normal. I think differently. -Justin Bieber', 'Friends are the best to turn to when you\'re having a rough day. -Justin Bieber', 'I leave the hip thrusts to Michael Jackson. -Justin Bieber', 'It\'s cool when fans spend so much time making things for me. It means a lot. -Justin Bieber']
 
 
     return {
@@ -29,10 +29,8 @@ def index():
 def start():
     data = bottle.request.json
 
-    bieberqoutes = ['I make mistakes growing up. I\'m not perfect; I\'m not a robot. -Justin Bieber', 'I\'m crazy, I\'m nuts. Just the way my brain works. I\'m not normal. I think differently. -Justin Bieber', 'Friends are the best to turn to when you\'re having a rough day. -Justin Bieber', 'I leave the hip thrusts to Michael Jackson. -Justin Bieber', It's cool when fans spend so much time making things for me. It means a lot. -Justin Bieber']
-
     return {
-        'taunt': random.choice(bieberqoutes)
+        'taunt': 'suckasss'
     }
 
 
